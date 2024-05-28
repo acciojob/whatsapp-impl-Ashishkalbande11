@@ -40,6 +40,7 @@ public class WhatsappRepository {
         if(users.size() == 2){
             group.setName(users.get(1).getName());
         }else {
+            customGroupCount++;
             group.setName("Group "+customGroupCount);
         }
         group.setNumberOfParticipants(users.size());
